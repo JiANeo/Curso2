@@ -9,10 +9,25 @@
 	<name>curso2-jsf-primefaces-hibernate-jpa</name>
 	<description>curso2 jsf primefaces hibernate jpa</description>
 
+	<repositories>
+		<repository>
+			<id>prime-repo</id>
+			<name>PrimeFaces Maven Repository</name>
+			<url>http://repository.primefaces.org</url>
+			<layout>default</layout>
+		</repository>
+	</repositories>
 
 	<dependencies>
 		<!-- <dependency> <groupId>org.jboss.weld.servlet</groupId> <artifactId>weld-servlet-core</artifactId> 
 			<version>3.0.3.Final</version> <scope>compile</scope> </dependency> -->
+
+		<dependency>
+			<groupId>org.primefaces.themes</groupId>
+			<artifactId>all-themes</artifactId>
+			<version>1.0.10</version>
+		</dependency>
+
 
 		<dependency>
 			<groupId>org.glassfish</groupId>
@@ -20,20 +35,26 @@
 			<version>2.2.14</version>
 			<scope>compile</scope>
 		</dependency>
-		<!-- ************************ -->
+		<!-- https://mvnrepository.com/artifact/javax.faces/javax.faces-api -->
 		<dependency>
-			<groupId>org.datanucleus</groupId>
-			<artifactId>javax.persistence</artifactId>
-			<version>2.2.0-release</version>
-			<scope>compile</scope>
+			<groupId>javax.faces</groupId>
+			<artifactId>javax.faces-api</artifactId>
+			<version>2.1</version>
+			<scope>provided</scope>
 		</dependency>
-		<!--********************** -->
+
 
 		<dependency>
 			<groupId>org.primefaces</groupId>
 			<artifactId>primefaces</artifactId>
 			<version>6.2</version>
 			<scope>compile</scope>
+		</dependency>
+
+		<dependency>
+			<groupId>org.webjars</groupId>
+			<artifactId>font-awesome</artifactId>
+			<version>4.0.3</version>
 		</dependency>
 
 		<dependency>
@@ -50,6 +71,7 @@
 			<scope>compile</scope>
 		</dependency>
 
+
 		<dependency>
 			<groupId>org.hibernate</groupId>
 			<artifactId>hibernate-core</artifactId>
@@ -57,17 +79,14 @@
 			<scope>compile</scope>
 		</dependency>
 
-		<!-- <dependency>
-			<groupId>org.hibernate</groupId>
-			<artifactId>hibernate-entitymanager</artifactId>
-			<version>5.2.6.Final</version>
-		</dependency>-->
-		
-		 <dependency>
-            <groupId>org.eclipse.persistence</groupId>
-            <artifactId>javax.persistence</artifactId>
-            <version>2.1.0</version>
-        </dependency>
+		<!-- <dependency> <groupId>org.hibernate</groupId> <artifactId>hibernate-entitymanager</artifactId> 
+			<version>5.2.6.Final</version> </dependency> -->
+
+		<dependency>
+			<groupId>org.eclipse.persistence</groupId>
+			<artifactId>javax.persistence</artifactId>
+			<version>2.1.0</version>
+		</dependency>
 
 		<dependency>
 			<groupId>mysql</groupId>
@@ -75,7 +94,11 @@
 			<version>6.0.5</version>
 			<scope>compile</scope>
 		</dependency>
+
+
 	</dependencies>
+
+
 
 
 	<build>

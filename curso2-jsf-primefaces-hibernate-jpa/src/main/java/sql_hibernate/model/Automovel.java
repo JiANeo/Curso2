@@ -14,7 +14,7 @@ import javax.persistence.Temporal;
 import javax.persistence.TemporalType;
 
 @Entity
-@Table(name = "automovel")
+@Table(name = "Automovel")
 public class Automovel implements Serializable {
 
 	@Id
