@@ -18,7 +18,13 @@ public class Automoveis implements Serializable {
 	public Automoveis(){
 		
 	}
-    public Automoveis(EntityManager manager){
+    public EntityManager getManager() {
+		return manager;
+	}
+	public void setManager(EntityManager manager) {
+		this.manager = manager;
+	}
+	public Automoveis(EntityManager manager){
     	this.manager=manager;
     	
     }

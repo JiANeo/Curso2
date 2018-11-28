@@ -4,13 +4,17 @@ import java.io.Serializable;
 import java.util.Date;
 import java.util.List;
 
-import javax.persistence.EntityManager;
-import javax.persistence.EntityManagerFactory;
-import javax.persistence.Persistence;
+import javax.persistence.*;
+//import javax.persistence.EntityManager;
+//import javax.persistence.EntityManagerFactory;
+//import javax.persistence.Persistence;
 
 import sql_hibernate.model.Automovel;
 
 public class CamadaPersistencia implements Serializable {
+
+
+	private static final long serialVersionUID = 1L;
 
 	public static void main(String[] args) {
 		EntityManagerFactory emf = Persistence.createEntityManagerFactory("javawebPU");
