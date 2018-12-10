@@ -15,7 +15,7 @@
 			<name>PrimeFaces Maven Repository</name>
 			<url>http://repository.primefaces.org</url>
 			<layout>default</layout>
-		</repository>
+		</repository> 
 	</repositories>
 
 	<dependencies>
